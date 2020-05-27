@@ -6,7 +6,7 @@ URL = "https://real.edu.ee"
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
 
-with open(os.path.expanduser("~/Desktop/codes/GitHub/titles.txt"), "r") as text_file:
+with open(os.path.expanduser("titles.txt"), "r") as text_file:
     
     old_titles = text_file.read().split("\n")
 
@@ -21,7 +21,7 @@ with open(os.path.expanduser("~/Desktop/codes/GitHub/titles.txt"), "r") as text_
     
     text_file.close()
 
-    text_file = open(os.path.expanduser("~/Desktop/codes/GitHub/titles.txt"), "w")
+    text_file = open(os.path.expanduser("titles.txt"), "w")
     for title in titles:
         text_file.write(title+"\n")
     text_file.close()
