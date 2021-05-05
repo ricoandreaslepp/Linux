@@ -4,7 +4,7 @@ def initial_sender(titles):
     from_addrs = "thegeartofear@gmail.com"
     to_addrs = "ricoandreas.lepp@real.edu.ee"
     
-    password = "Obelisk1234"
+    password = ""
     msg = "\r\n".join(
             ["From: Reaalibot\n", "To: ricoandreaslepp\n", "Subject: Uudised\n"]+
             ["Reaalilehel hetkel olevad pealkirad:\n"] + titles + ["", "Best wishes"]).encode('utf-8')
@@ -24,7 +24,7 @@ def send_confirmation(titles):
 
     from_addrs = "thegeartofear@gmail.com"
     to_addrs = "ricoandreas.lepp@real.edu.ee"
-    password = "Obelisk1234"
+    password = ""
 
     msg = EmailMessage()
     msg['Subject'] = "Uudised!"
@@ -53,7 +53,7 @@ def spam_bot(i):
 
     from_addrs = "thegeartofear@gmail.com"
     to_addrs = "ricoandreas.lepp@real.edu.ee"
-    password = "Obelisk1234"
+    password = ""
 
     msg = EmailMessage()
     msg['Subject'] = "Ya like jazz? " + str(i)
