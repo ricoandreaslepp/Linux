@@ -60,8 +60,8 @@ def spam_bot(i):
     msg['From'] = "Linnuke " + str(i)
     msg['To'] = to_addrs
 
-    message = """eat ass, listen to jazz
-    is this ill eagle?
+    message = """
+    This is a spam bot
     """
     
     msg.set_content(message)
