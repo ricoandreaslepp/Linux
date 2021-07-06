@@ -1,2 +1,2 @@
-# Linux
-This is an example that I am testing on Ubuntu.
+# Linux repo
+This is an example repository that I tested on Ubuntu Linux on a VM.
